@@ -40,7 +40,7 @@ head(datXY)
 datXY.ras = create_raster_from_datXY(datXY,  fieldName = 'val', sampleR = sampleR)
 
 
-## check by plot, newly raster will be constraint by sampleR regardless points location
+## check by plot, new raster will be constraint by sampleR regardless points location
 plot(0,0, col = 'white', xlim = range(X), ylim = range(Y), xlab = '', ylab = '')
 image(datXY.ras, add = T)
 points(datXY[,1], datXY[,2], pch = 16, cex = 0.1)
